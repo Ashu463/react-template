@@ -109,3 +109,21 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+/* Ties the material-symbols-outlined className (used throughout every
+   Stitch-derived design and every uiExpert/coder component) to the font
+   linked in index.html. Without this rule the font loads but nothing
+   applies it, so icon ligature names render as literal text. */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+  
